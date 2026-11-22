@@ -39,6 +39,13 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - Se actualizan las reglas en `Docs/README.md`, `Docs/CHANGELOG.md` y `Docs/ROADMAP.md`; se numeran `C-001` y `C-002` los dos commits ya existentes.
 - Prueba: este registro se guarda junto con el cambio, en el mismo commit; `git log -1 --oneline` debe mostrar el mensaje encabezado por `C-003`.
 
+`C-004` — Cerrar Etapa 0 y verificar responsive (22 de noviembre de 2026).
+
+- Se revisan los 50 enlaces de los 11 documentos de `Docs/`: ninguno roto. Etapa 0 queda cerrada.
+- M-011 pasa a `Hecha`: 12 combinaciones (375, 768 y 1024 px × `/`, `/crm`, `/taskflow` y `/barbershop`) sin desbordamiento horizontal, sin texto recortado, consola sin errores y sin peticiones fallidas.
+- Se corrige PD-06: esta copia ya tiene `.git` y commits locales, pero sigue sin remote. Se anota para M-018 el campo `type="date"` de BarberShop a 768 px, más ancho por dentro que por fuera.
+- Prueba: mediciones de layout y consola en navegador con cargas nuevas. Sin cambios de código, por lo que no aplica Ctrl+F5.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -51,6 +58,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Prueba: build correcto con `npm run build`; las cuatro rutas abren en `localhost:5173` sin errores de consola ni peticiones fallidas. Queda pendiente la revisión registrada en 375, 768 y 1024 px (M-011).
 - Segundo commit (`C-002`), hecho con la regla anterior, registró el hash real del primero en este archivo. Con la regla nueva no se habría necesitado.
 - Tercer commit (`C-003`): se cambia la regla de registro a un ID propio `C-xx`, asignado antes de commitear, para no hacer un segundo commit solo por el CHANGELOG. Se actualizan `Docs/README.md`, `Docs/CHANGELOG.md` y `Docs/ROADMAP.md`.
+- Cuarto commit (`C-004`): se cierra Etapa 0 con la revisión de 50 enlaces y se marca M-011 como hecha tras comprobar las cuatro rutas en 375, 768 y 1024 px. Se corrige PD-06 y se registra una observación para M-018.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 

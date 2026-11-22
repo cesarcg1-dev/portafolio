@@ -1,6 +1,6 @@
 # ChacDev Portafolio — Roadmap
 
-**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** documentación actualizada a la copia sin base de datos; cierre de v1 pendiente; v1.1 y v2 sin iniciar
+**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** Etapa 0 cerrada y Etapa 2 verificada; cierre de v1 pendiente; v1.1 y v2 sin iniciar
 
 Cada etapa termina cuando se cumple su condición. Los temas sin decidir se registran en `DECISIONES.md`.
 
@@ -26,7 +26,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 
 Situación al 22 de noviembre de 2026:
 
-- **Etapa 0:** documentación reescrita el 22 de noviembre para describir la copia sin base de datos. Falta la comprobación final de enlaces entre documentos.
+- **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos.
 - **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002), `og:image` (M-003), datos de contacto (M-004) y el clic en la tarjeta del CRM (M-006).
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el roadmap original.

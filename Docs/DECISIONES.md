@@ -35,7 +35,7 @@ Son decisiones ya visibles en el código, en los documentos originales o acordad
 | PD-03 | Confirmar cuenta de Formspree y obtener el ID real del formulario | M-002 | Sin resolver |
 | PD-04 | Definir metas numéricas de éxito | — | Sin resolver |
 | PD-05 | Confirmar proyecto de Supabase real y ejecución de `schema.sql` y `seed.sql` | M-012 | Cerrado el 22 de noviembre de 2026: en esta copia no hay proyecto de Supabase ni scripts SQL (A-10) |
-| PD-06 | Crear el repositorio remoto en GitHub | M-010 | Sin resolver; esta copia no tiene carpeta `.git` |
+| PD-06 | Crear el repositorio remoto en GitHub | M-010 | Sin resolver; esta copia ya tiene carpeta `.git` y commits locales, pero todavía no tiene remote |
 | PD-07 | Publicar en Vercel y fijar la URL final | M-010 | Sin resolver |
 | PD-08 | Reemplazar correo, GitHub y LinkedIn de ejemplo | M-004 | Sin resolver |
 | PD-09 | Definir el trabajo con Supabase local | M-009 | Cerrado: pertenece a la versión anterior; en esta copia no aplica (A-10) |
