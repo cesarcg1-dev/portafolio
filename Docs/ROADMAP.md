@@ -1,6 +1,6 @@
 # ChacDev Portafolio — Roadmap
 
-**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** Etapa 0 cerrada y Etapa 2 verificada; cierre de v1 pendiente; v1.1 y v2 sin iniciar
+**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** Etapas 0 y 1 cerradas y Etapa 2 verificada; v1.1 y v2 sin iniciar
 
 Cada etapa termina cuando se cumple su condición. Los temas sin decidir se registran en `DECISIONES.md`; el detalle de las mejoras, en `MEJORAS.md`.
 
@@ -77,7 +77,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 | 2.2 | Hero: título, subtítulo, CTA | Sección hero funcional | 45 min | Hecho |
 | 2.3 | Sección de 3 enlaces a demos | Demos navegables | 1h | Hecho |
 | 2.4 | Secciones de problemas, servicios y proceso | Contenido de negocio | 30 min | Hecho |
-| 2.5 | Formulario de contacto (nombre, email, mensaje) con envío a Formsubmit.co | Formulario funcional | 45 min | En curso: endpoint configurado, falta activación y prueba (M-002) |
+| 2.5 | Formulario de contacto (nombre, email, mensaje) con envío a Formsubmit.co | Formulario funcional | 45 min | Hecho: endpoint activado y mensaje de prueba recibido (M-002) |
 | 2.6 | Responsive: ajustar en 375px, 768px, 1024px | Sin desbordamiento ni texto cortado | 1h | Hecho; revisión registrada el 22 de noviembre de 2026 (M-011) |
 
 **Criterio de salida:** landing completa, responsive, formulario envía y confirma.
@@ -132,7 +132,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 | 6.1 | Revisar responsive en 375px, 768px, 1024px en las 3 demos + landing | Sin desbordamiento ni texto cortado | 1h | Hecho en local el 22 de noviembre de 2026 (M-011); falta en producción |
 | 6.2 | Verificar consola sin errores en producción | Consola limpia | 30 min | Pendiente; solo se ha comprobado en desarrollo |
 | 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y og:image (M-003); falta la URL absoluta al publicar (PD-07) |
-| 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente (M-002) |
+| 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente; comprobado en localhost el 22 de noviembre de 2026, falta al publicar |
 | 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Pendiente (PD-02) |
 | 6.6 | Deploy final y prueba en móvil real | Sitio funcional | 30 min | Pendiente (M-010) |
 
@@ -151,7 +151,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 Situación al 22 de noviembre de 2026:
 
 - **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos. Al fusionarse `PLAN.md` aquí, `Docs/` quedó con 10 archivos (C-005).
-- **Etapa 1:** pendiente. Sigue activar Formsubmit.co y probar el envío real (M-002). M-003, M-004 y M-006 ya están hechas.
+- **Etapa 1:** cerrada el 22 de noviembre de 2026. Formsubmit.co activado y mensaje de prueba recibido por César; M-002, M-003, M-004 y M-006 figuran como `Hecha`.
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el plan original.
 - **Trabajo ya realizado en esta copia:** landing con diseño propio, rutas `/crm`, `/taskflow` y `/barbershop`, nueve colecciones de datos de ejemplo y operaciones crear/editar/borrar con «Reiniciar demo» (M-019).

@@ -69,8 +69,6 @@ Las metas numéricas no están definidas (ver PD-04 en `DECISIONES.md`).
 
 ## 8. Riesgos identificados
 
-- **Formulario sin ID real:** el `action` apunta a `TU-FORM-ID`; el envío no está probado (M-002).
+- **Formulario dependiente de un servicio externo:** el envío usa Formsubmit.co; si el servicio falla, el visitante no podrá contactar (M-002).
 - **Datos por navegador:** al limpiar el almacenamiento del sitio o cambiar de equipo, cada demo vuelve a sus datos de ejemplo. Es parte del diseño, pero conviene avisar al visitante; por eso las demos muestran `DemoNotice`.
 - **Contacto y publicación sin definir:** no hay remote de GitHub ni URL de Vercel confirmada (PD-06, PD-07).
-- **Datos de contacto de ejemplo:** correo y enlaces sociales siguen como marcadores de posición (PD-08, M-004).
-- **Revisión visual pendiente:** no hay registro de revisión en 375, 768 y 1024 px de esta copia (M-011).

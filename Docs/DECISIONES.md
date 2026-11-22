@@ -34,7 +34,7 @@ Son decisiones ya visibles en el código, en los documentos originales o acordad
 |---|---|---|---|
 | PD-01 | Confirmar React + Vite o evaluar Basecoat para volver a vanilla | — | Sin respuesta registrada; el código ya usa React |
 | PD-02 | Dominio propio o `chacdev.vercel.app` | M-010 | Sin resolver |
-| PD-03 | Confirmar cuenta de Formspree y obtener el ID real del formulario | M-002 | Cerrado el 22 de noviembre de 2026: Formspree queda descartado (A-12); M-002 seguirá con otro mecanismo de envío |
+| PD-03 | Confirmar cuenta de Formspree y obtener el ID real del formulario | M-002 | Cerrado el 22 de noviembre de 2026: Formspree descartado (A-12); el envío funciona con Formsubmit.co y M-002 está hecha |
 | PD-04 | Definir metas numéricas de éxito | — | Sin resolver |
 | PD-05 | Confirmar proyecto de Supabase real y ejecución de `schema.sql` y `seed.sql` | M-012 | Cerrado el 22 de noviembre de 2026: en esta copia no hay proyecto de Supabase ni scripts SQL (A-10) |
 | PD-06 | Crear el repositorio remoto en GitHub | M-010 | Sin resolver; esta copia ya tiene carpeta `.git` y commits locales, pero todavía no tiene remote |

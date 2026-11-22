@@ -92,8 +92,8 @@ Los cambios quedan solo en ese navegador y no se envían a ningún servidor. Los
 ## 7. Formulario de contacto
 
 - Campos: `nombre` (texto), `email` (correo) y `mensaje` (área de texto). Los tres son obligatorios.
-- Es un formulario HTML nativo: `method="POST"` y `action` hacia Formspree.
-- La dirección actual contiene `TU-FORM-ID`, un marcador de posición. Falta el ID real (M-002).
+- Es un formulario HTML nativo: `method="POST"` y `action` hacia `https://formsubmit.co/cesarcg1@gmail.com` (A-12, M-002).
+- El endpoint se activó con un primer envío y César confirmó el 22 de noviembre de 2026 que recibió un mensaje de prueba.
 - No hay confirmación propia ni estado de envío en la interfaz; depende de la respuesta del servicio externo.
 
 ## 8. Responsive

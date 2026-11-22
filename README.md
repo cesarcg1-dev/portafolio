@@ -24,7 +24,7 @@ Si la página no refleja los cambios, recarga con **Ctrl+F5**.
 
 No hay base de datos ni servidor externo. Las demos corren en tu `localhost`, leen datos de ejemplo desde `src/data/seed*.js` y guardan tus cambios en `localStorage`, dentro de tu navegador. Cada demo tiene un botón **Reiniciar demo** para volver a los datos originales. Los cambios no se comparten con otras personas ni se envían a ningún servidor.
 
-El formulario de contacto de la landing sí usa Formspree, pero todavía tiene un ID de ejemplo (`TU-FORM-ID`), así que aún no envía mensajes reales.
+El formulario de contacto de la landing envía los mensajes con Formsubmit.co a `cesarcg1@gmail.com`. Se activó y se comprobó con un mensaje de prueba el 22 de noviembre de 2026. Las demos, en cambio, no envían sus datos a ningún servidor.
 
 ## Rutas
 

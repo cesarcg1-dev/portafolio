@@ -81,7 +81,7 @@ No hay variables de entorno en esta copia. No se necesita `.env.local` ni ningun
 
 - No hay login, roles ni permisos de servidor.
 - Los cambios de las demos quedan en el `localStorage` del dispositivo de quien las prueba y no se envían a ningún servidor.
-- El formulario envía los datos a Formspree como servicio externo; el ID del endpoint sigue siendo un marcador de posición (M-002).
+- El formulario envía los datos a Formsubmit.co como servicio externo; el endpoint está activado y César confirmó la recepción de un mensaje de prueba (A-12, M-002).
 - No hay secretos en el repositorio: `.env.local` y `.env` están en `.gitignore`, aunque hoy no se usan.
 
 ## 6. Límites

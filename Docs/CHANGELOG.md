@@ -77,6 +77,12 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - M-002 queda `En curso`: el código está listo, pero Formsubmit exige enviar una primera prueba y confirmar el correo de activación antes de recibir mensajes. Ese paso lo hace César.
 - Prueba: `npm run build` correcto; en navegador el formulario tiene el `action`, el `method` POST y los cinco campos esperados, sin errores de consola. No se hizo un envío real. **Recarga con Ctrl+F5** al revisar en tu navegador.
 
+`C-010` — Cerrar M-002 y la Etapa 1 (22 de noviembre de 2026).
+
+- César activó Formsubmit.co con el primer envío y confirmó que recibió un mensaje de prueba en `cesarcg1@gmail.com`. M-002 pasa a `Hecha` y la Etapa 1 queda cerrada.
+- Se actualizan el `README.md` de la raíz, `PRD.md`, `ESPECIFICACION_FUNCIONAL.md` y `ARQUITECTURA.md`, que todavía describían Formspree y `TU-FORM-ID`; también se cierra PD-03 con el resultado real.
+- Prueba: verificación hecha por César en su correo; no hubo cambios de código, por lo que no aplica Ctrl+F5. La prueba en producción (fase 6.4) sigue pendiente hasta publicar.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -95,6 +101,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Séptimo commit (`C-007`): se agrega `og:image` con un PNG propio de 1200×630 y se marca M-003 como hecha. La URL absoluta queda pendiente del dominio final (PD-07).
 - Octavo commit (`C-008`): se ponen el GitHub y el correo reales en el pie, se quita LinkedIn y se descarta Formspree. M-004 pasa a `Hecha`; PD-08 y PD-03 quedan cerrados con A-11 y A-12.
 - Noveno commit (`C-009`): se configura Formsubmit.co como endpoint del formulario y M-002 pasa a `En curso`, a la espera de la activación por correo.
+- Décimo commit (`C-010`): se cierra M-002 tras la confirmación de recepción del mensaje de prueba. Etapa 1 queda cerrada y se corrigen los documentos que aún citaban Formspree.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 
