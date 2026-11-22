@@ -83,6 +83,13 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - Se actualizan el `README.md` de la raíz, `PRD.md`, `ESPECIFICACION_FUNCIONAL.md` y `ARQUITECTURA.md`, que todavía describían Formspree y `TU-FORM-ID`; también se cierra PD-03 con el resultado real.
 - Prueba: verificación hecha por César en su correo; no hubo cambios de código, por lo que no aplica Ctrl+F5. La prueba en producción (fase 6.4) sigue pendiente hasta publicar.
 
+`C-011` — Preparar la publicación (22 de noviembre de 2026).
+
+- César eligió el repo `https://github.com/cesarcg1-dev/portafolio` y el dominio `https://chacdev.vercel.app` (PD-02, PD-06). El `README.md` reúne los comandos que él debe ejecutar.
+- Se agrega `vercel.json` con un rewrite a `/index.html` para que `/crm`, `/taskflow` y `/barbershop` respondan al abrirlos directamente. `og:image` pasa de `/og-image.png` a la URL absoluta con el dominio elegido.
+- M-010 queda `En curso`: faltan el remote, el deploy y la prueba en producción. Se corrigen los documentos que todavía citaban Formspree, un remote inexistente o el formulario sin activar.
+- Prueba: `npm run build` correcto, `vercel.json` válido, 55 enlaces de `Docs/` sin rotos y las cuatro rutas abren en localhost con la `og:image` absoluta y consola limpia. Sin cambios visuales, no aplica Ctrl+F5.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -102,6 +109,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Octavo commit (`C-008`): se ponen el GitHub y el correo reales en el pie, se quita LinkedIn y se descarta Formspree. M-004 pasa a `Hecha`; PD-08 y PD-03 quedan cerrados con A-11 y A-12.
 - Noveno commit (`C-009`): se configura Formsubmit.co como endpoint del formulario y M-002 pasa a `En curso`, a la espera de la activación por correo.
 - Décimo commit (`C-010`): se cierra M-002 tras la confirmación de recepción del mensaje de prueba. Etapa 1 queda cerrada y se corrigen los documentos que aún citaban Formspree.
+- Undécimo commit (`C-011`): se decidieron el repo `cesarcg1-dev/portafolio` y el dominio `chacdev.vercel.app`, se agregó `vercel.json` para las rutas de las demos y se fijó `og:image` como URL absoluta. M-010 sigue `En curso` hasta el push y el deploy.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 

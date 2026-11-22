@@ -47,7 +47,7 @@ Los componentes de interfaz siguen el estilo shadcn/ui y están copiados en `src
 
 | ID | Ruta | Archivo | Fuente de datos |
 |---|---|---|---|
-| V-01 | `/` | `src/pages/Home.jsx` | Contenido estático y formulario a Formspree |
+| V-01 | `/` | `src/pages/Home.jsx` | Contenido estático y formulario a Formsubmit.co |
 | V-02 | `/crm` | `src/pages/CRM.jsx` | `chac_crm_stages`, `chac_crm_contacts`, `chac_crm_deals` (semilla: `seedCrm.js`) |
 | V-03 | `/taskflow` | `src/pages/TaskFlow.jsx` | `chac_tf_projects`, `chac_tf_tasks`, `chac_tf_subtasks` (semilla: `seedTaskflow.js`) |
 | V-04 | `/barbershop` | `src/pages/BarberShop.jsx` | `chac_bs_services`, `chac_bs_barbers`, `chac_bs_appointments` (semilla: `seedBarbershop.js`) |

@@ -46,9 +46,9 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 |---|---|---|---|---|
 | 0.1 | Confirmar stack: React + Vite vs Basecoat (vanilla) | Decisión documentada | 15 min | Hecho |
 | 0.2 | Crear proyecto Supabase Free, anotar URL y anon key | Proyecto creado | 10 min | No aplica (A-10) |
-| 0.3 | Crear repositorio GitHub (`chacdev-portafolio`) | Repo listo | 5 min | Pendiente (PD-06, M-010) |
-| 0.4 | Crear proyecto Vercel vinculado al repo | Deploy automático configurado | 10 min | Pendiente (PD-07, M-010) |
-| 0.5 | Elegir servicio de formulario: Formsubmit.co, sin cuenta | Endpoint configurado | 10 min | Hecho el 22 de noviembre de 2026 (A-12); falta activarlo con la primera prueba |
+| 0.3 | Crear repositorio GitHub (`cesarcg1-dev/portafolio`) | Repo listo | 5 min | Pendiente: César debe crearlo y conectarlo (PD-06, M-010) |
+| 0.4 | Crear proyecto Vercel vinculado al repo | Deploy automático configurado | 10 min | Pendiente: importar con el nombre `chacdev` para `https://chacdev.vercel.app` (PD-02, PD-07, M-010) |
+| 0.5 | Elegir servicio de formulario: Formsubmit.co, sin cuenta | Endpoint configurado | 10 min | Hecho el 22 de noviembre de 2026: endpoint activado y mensaje de prueba recibido (A-12) |
 
 **Criterio de salida:** repo creado, Vercel vinculado y servicio de formulario elegido. No se crea proyecto de base de datos.
 
@@ -131,10 +131,12 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 |---|---|---|---|---|
 | 6.1 | Revisar responsive en 375px, 768px, 1024px en las 3 demos + landing | Sin desbordamiento ni texto cortado | 1h | Hecho en local el 22 de noviembre de 2026 (M-011); falta en producción |
 | 6.2 | Verificar consola sin errores en producción | Consola limpia | 30 min | Pendiente; solo se ha comprobado en desarrollo |
-| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y og:image (M-003); falta la URL absoluta al publicar (PD-07) |
+| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y `og:image` con URL absoluta (M-003); falta comprobarla en producción (PD-07) |
 | 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente; comprobado en localhost el 22 de noviembre de 2026, falta al publicar |
-| 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Pendiente (PD-02) |
+| 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Dominio elegido: `https://chacdev.vercel.app` (PD-02); falta configurarlo en Vercel |
 | 6.6 | Deploy final y prueba en móvil real | Sitio funcional | 30 min | Pendiente (M-010) |
+
+**Preparación hecha el 22 de noviembre de 2026:** `vercel.json` redirige todas las rutas a `index.html` para que `/crm`, `/taskflow` y `/barbershop` abran al entrar directamente; `og:image` usa ya la URL absoluta del dominio elegido (PD-02).
 
 **Criterio de salida:** sitio en producción, sin errores y con formulario funcional.
 
@@ -173,7 +175,7 @@ La Fase 0 precede a la Fase 1, y esta a la Fase 2. Las fases 3, 4 y 5 son indepe
 
 - Cuenta Vercel (Free/Hobby)
 - Cuenta GitHub
-- Cuenta Formspree (Free tier suficiente)
+- Endpoint de Formsubmit.co ya activado (no requiere cuenta)
 - Node.js instalado localmente
 - Editor (VS Code recomendado)
 

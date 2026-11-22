@@ -52,7 +52,7 @@ Lo que existe en el código:
 - Nueve colecciones de datos de ejemplo en `src/data/`, con los cambios guardados en `localStorage`.
 - Navegación con React Router y estilos con Tailwind en las demos y CSS propio en la landing.
 
-Pendiente de confirmación fuera del código: ID de Formspree con valor real, remote de GitHub, deploy en Vercel y datos de contacto reales (ver `DECISIONES.md`). Ya no hay nada que configurar de base de datos.
+Ya están resueltos el formulario (Formsubmit.co, activado y probado) y los datos de contacto del pie (correo y GitHub reales). Sigue pendiente fuera del código: crear el repositorio `https://github.com/cesarcg1-dev/portafolio`, conectarlo como remote, importarlo en Vercel con el dominio `chacdev.vercel.app` y comprobar el sitio publicado (ver `DECISIONES.md`). Ya no hay nada que configurar de base de datos.
 
 ## 6. Fuera de alcance
 
@@ -71,4 +71,4 @@ Las metas numéricas no están definidas (ver PD-04 en `DECISIONES.md`).
 
 - **Formulario dependiente de un servicio externo:** el envío usa Formsubmit.co; si el servicio falla, el visitante no podrá contactar (M-002).
 - **Datos por navegador:** al limpiar el almacenamiento del sitio o cambiar de equipo, cada demo vuelve a sus datos de ejemplo. Es parte del diseño, pero conviene avisar al visitante; por eso las demos muestran `DemoNotice`.
-- **Contacto y publicación sin definir:** no hay remote de GitHub ni URL de Vercel confirmada (PD-06, PD-07).
+- **Publicación pendiente:** el correo y el GitHub ya son reales, pero todavía no hay remote de GitHub ni sitio publicado. El repo y el dominio están acordados y falta ejecutarlos (PD-02, PD-06, PD-07).

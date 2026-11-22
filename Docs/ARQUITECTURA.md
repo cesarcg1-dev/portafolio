@@ -49,7 +49,7 @@ Navegador
 
 Cada página llama a `useLocalStorage` con una clave y un arreglo de ejemplo. La función devuelve el valor guardado si existe; si no, devuelve el arreglo de `src/data/`. No hay store global, capa de repositorio ni peticiones a un servidor de datos: el agrupamiento de resultados ocurre en cada componente.
 
-La landing no consume datos: muestra contenido fijo y envía el formulario a Formspree (A-10).
+La landing no consume datos: muestra contenido fijo y envía el formulario a Formsubmit.co (A-10, A-12).
 
 ## 3. Estructura del código
 
@@ -86,9 +86,9 @@ No hay variables de entorno en esta copia. No se necesita `.env.local` ni ningun
 
 ## 6. Límites
 
-- El sitio depende de Formspree para el formulario; las demos no dependen de servicios externos.
+- El sitio depende de Formsubmit.co para el formulario; las demos no dependen de servicios externos.
 - Los datos no se comparten entre navegadores ni dispositivos, y se pierden al limpiar el almacenamiento del sitio.
-- No hay remote de GitHub ni deploy confirmado (PD-06, PD-07).
+- Hay commits locales, pero todavía no hay remote de GitHub ni deploy confirmado (PD-06, PD-07). `vercel.json` ya prepara el enrutamiento de las rutas de las demos.
 - No hay página 404 ni manejo de rutas desconocidas.
 - El `Navbar` de las demos no muestra sus enlaces en móvil (M-005); la landing sí tiene menú móvil propio.
 

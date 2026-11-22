@@ -35,6 +35,17 @@ El formulario de contacto de la landing envía los mensajes con Formsubmit.co a 
 | `/taskflow` | Proyectos, tareas y subtareas |
 | `/barbershop` | Agenda de citas |
 
+## Publicación
+
+El remote acordado es `https://github.com/cesarcg1-dev/portafolio` (PD-06). Para subir el código, crea ese repositorio en GitHub y ejecuta desde esta carpeta:
+
+```bash
+git remote add origin https://github.com/cesarcg1-dev/portafolio.git
+git push -u origin master
+```
+
+Después importa el repositorio en Vercel con el nombre de proyecto `chacdev` para usar `https://chacdev.vercel.app` (PD-02). El archivo `vercel.json` redirige `/crm`, `/taskflow` y `/barbershop` a `index.html`, así que esas rutas funcionan al abrirlas directamente. Queda pendiente comprobar en producción el formulario y la imagen de vista previa (PD-07).
+
 ## Documentación
 
 La documentación oficial está en `Docs/`. Empieza por `Docs/README.md`; los acuerdos y el historial de la versión anterior con Supabase están en `Docs/DECISIONES.md` y `Docs/CHANGELOG.md`.

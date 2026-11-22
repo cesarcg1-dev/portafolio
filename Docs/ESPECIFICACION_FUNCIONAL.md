@@ -109,4 +109,4 @@ Los cambios quedan solo en ese navegador y no se envían a ningún servidor. Los
 - Sin login y sin sincronización: cada visitante ve sus propios cambios en su navegador.
 - Los datos son ficticios y están definidos en `src/data/seedCrm.js`, `seedTaskflow.js` y `seedBarbershop.js`.
 - Al limpiar los datos del sitio en el navegador, las demos vuelven a los valores de ejemplo.
-- El formulario de contacto sí depende de un servicio externo (Formspree) y sigue con ID de ejemplo.
+- El formulario de contacto sí depende de un servicio externo (Formsubmit.co), con el endpoint activado y probado en localhost (A-12, M-002).
