@@ -48,7 +48,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 | 0.2 | Crear proyecto Supabase Free, anotar URL y anon key | Proyecto creado | 10 min | No aplica (A-10) |
 | 0.3 | Crear repositorio GitHub (`chacdev-portafolio`) | Repo listo | 5 min | Pendiente (PD-06, M-010) |
 | 0.4 | Crear proyecto Vercel vinculado al repo | Deploy automático configurado | 10 min | Pendiente (PD-07, M-010) |
-| 0.5 | Elegir servicio de formulario (Formspree/EmailJS) y crear cuenta | Endpoint de formulario | 10 min | Pendiente (PD-03, M-002) |
+| 0.5 | Elegir servicio de formulario: Formsubmit.co, sin cuenta | Endpoint configurado | 10 min | Hecho el 22 de noviembre de 2026 (A-12); falta activarlo con la primera prueba |
 
 **Criterio de salida:** repo creado, Vercel vinculado y servicio de formulario elegido. No se crea proyecto de base de datos.
 
@@ -77,7 +77,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 | 2.2 | Hero: título, subtítulo, CTA | Sección hero funcional | 45 min | Hecho |
 | 2.3 | Sección de 3 enlaces a demos | Demos navegables | 1h | Hecho |
 | 2.4 | Secciones de problemas, servicios y proceso | Contenido de negocio | 30 min | Hecho |
-| 2.5 | Formulario de contacto (nombre, email, mensaje) con envío a Formspree | Formulario funcional | 45 min | Pendiente (M-002) |
+| 2.5 | Formulario de contacto (nombre, email, mensaje) con envío a Formsubmit.co | Formulario funcional | 45 min | En curso: endpoint configurado, falta activación y prueba (M-002) |
 | 2.6 | Responsive: ajustar en 375px, 768px, 1024px | Sin desbordamiento ni texto cortado | 1h | Hecho; revisión registrada el 22 de noviembre de 2026 (M-011) |
 
 **Criterio de salida:** landing completa, responsive, formulario envía y confirma.
@@ -151,7 +151,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 Situación al 22 de noviembre de 2026:
 
 - **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos. Al fusionarse `PLAN.md` aquí, `Docs/` quedó con 10 archivos (C-005).
-- **Etapa 1:** pendiente. Sigue definir y probar el envío del formulario (M-002), sin Formspree. M-003, M-004 y M-006 ya están hechas.
+- **Etapa 1:** pendiente. Sigue activar Formsubmit.co y probar el envío real (M-002). M-003, M-004 y M-006 ya están hechas.
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el plan original.
 - **Trabajo ya realizado en esta copia:** landing con diseño propio, rutas `/crm`, `/taskflow` y `/barbershop`, nueve colecciones de datos de ejemplo y operaciones crear/editar/borrar con «Reiniciar demo» (M-019).

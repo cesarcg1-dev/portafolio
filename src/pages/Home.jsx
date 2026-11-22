@@ -343,7 +343,11 @@ export default function Home() {
         <section className="contact-form" id="contacto">
           <h2>Cuéntame tu problema</h2>
           <p>Respondo en menos de 24 horas. Sin compromiso.</p>
-          <form action="https://formspree.io/f/TU-FORM-ID" method="POST">
+          <form
+            action="https://formsubmit.co/cesarcg1@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="Mensaje desde ChacDev" />
             <div className="demo-links">
               <input
                 type="text"

@@ -24,7 +24,7 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 | ID | Concepto | Estado |
 |---|---|---|
 | M-001 | Documentación inicial de ChacDev Portafolio | Hecha |
-| M-002 | Definir el mecanismo de envío del formulario y probarlo | Pendiente |
+| M-002 | Configurar Formsubmit.co y probar el envío | En curso |
 | M-003 | Añadir `favicon.svg` y la etiqueta `og:image` | Hecha |
 | M-004 | Reemplazar correo, GitHub y LinkedIn de ejemplo | Hecha |
 | M-005 | Mostrar los enlaces de demos en el menú móvil | Hecha |
@@ -47,7 +47,7 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 ## Notas
 
 - **M-001:** tipo documentación. Motivo: la documentación estaba repartida entre la raíz del repo, la carpeta padre y el workspace. Resultado esperado: un conjunto de documentos en `Docs/` que explique el porqué, las reglas, la arquitectura, los datos, las decisiones y las etapas, más una guía rápida en la raíz. Acuerdos aplicados: A-07 y A-08. Archivos creados: los diez documentos de `Docs/` y el `README.md` de la raíz. Archivos reubicados: `PRD.md` y `ROADMAP.md` entraron a `Docs/`; `DESICIONES.md` pasó a `Docs/DECISIONES.md` con el nombre corregido. El 22 de noviembre de 2026 se actualizaron los documentos de `Docs/` a la copia sin base de datos.
-- **M-002:** origen PD-03. Formspree quedó descartado el 22 de noviembre de 2026 (A-12); el `action` sigue con `TU-FORM-ID` y el envío no está probado. Falta elegir el mecanismo de envío. Verificación: enviar un mensaje real y confirmar recepción en `cesarcg1@gmail.com`.
+- **M-002:** origen PD-03. Formspree quedó descartado (A-12). El 22 de noviembre de 2026 el `action` pasó a `https://formsubmit.co/cesarcg1@gmail.com` y se añadió el campo oculto `_subject`; Formsubmit no necesita cuenta. Falta que César envíe una primera prueba, confirme el correo de activación y compruebe la recepción en `cesarcg1@gmail.com`. Verificación pendiente: mensaje real recibido. Estado actual: **En curso**.
 - **M-003:** `index.html` referencia `/favicon.svg` y, desde el 22 de noviembre de 2026, `og:image` con `/og-image.png` y su texto alternativo. El PNG propio es de 1200×630 y usa los colores de la landing. Verificado: build correcto y petición 200 `image/png` sin errores de consola. **Hecha** el 22 de noviembre de 2026. Al publicar, PD-07 exige convertir la ruta en URL absoluta con el dominio final.
 - **M-004:** origen PD-08. El 22 de noviembre de 2026 se reemplazó `tu-usuario` por `https://github.com/cesarcg1-dev`, se agregó `mailto:cesarcg1@gmail.com` y se quitó el enlace de LinkedIn en `Footer.jsx` (A-11). No había marcadores de lugar en `Home.jsx`. Verificado en navegador. **Hecha** el 22 de noviembre de 2026.
 - **M-005:** la landing incluye un encabezado propio con botón ☰ y menú móvil que lleva a las secciones y a las tres demos. El `Navbar` que aparece dentro de las demos sigue ocultando sus enlaces por debajo de `md`. Verificación: abrir `/` en 375 px y comprobar que se pueda llegar a las tres demos desde el menú.

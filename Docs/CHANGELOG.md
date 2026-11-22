@@ -71,6 +71,12 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - M-004 pasa a `Hecha` y PD-08 queda resuelto. También se cierra PD-03: Formspree queda descartado (A-12) y M-002 sigue abierto hasta elegir otro mecanismo de envío.
 - Prueba: `npm run build` correcto; en navegador los enlaces del pie apuntan a los valores esperados, sin errores de consola. **Recarga con Ctrl+F5** al revisar en tu navegador.
 
+`C-009` — Configurar el formulario con Formsubmit.co (22 de noviembre de 2026).
+
+- El `action` de `Home.jsx` pasó de `formspree.io/f/TU-FORM-ID` a `formsubmit.co/cesarcg1@gmail.com` y se agregó el campo oculto `_subject` con «Mensaje desde ChacDev». Los campos nombre, email y mensaje conservan sus atributos `name`.
+- M-002 queda `En curso`: el código está listo, pero Formsubmit exige enviar una primera prueba y confirmar el correo de activación antes de recibir mensajes. Ese paso lo hace César.
+- Prueba: `npm run build` correcto; en navegador el formulario tiene el `action`, el `method` POST y los cinco campos esperados, sin errores de consola. No se hizo un envío real. **Recarga con Ctrl+F5** al revisar en tu navegador.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -88,6 +94,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Sexto commit (`C-006`): se abre el detalle del CRM al hacer clic en la tarjeta o pulsar `Enter`. M-006 pasa a `Hecha`; PD-10 continúa abierto sobre si conviene mostrar más campos.
 - Séptimo commit (`C-007`): se agrega `og:image` con un PNG propio de 1200×630 y se marca M-003 como hecha. La URL absoluta queda pendiente del dominio final (PD-07).
 - Octavo commit (`C-008`): se ponen el GitHub y el correo reales en el pie, se quita LinkedIn y se descarta Formspree. M-004 pasa a `Hecha`; PD-08 y PD-03 quedan cerrados con A-11 y A-12.
+- Noveno commit (`C-009`): se configura Formsubmit.co como endpoint del formulario y M-002 pasa a `En curso`, a la espera de la activación por correo.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 

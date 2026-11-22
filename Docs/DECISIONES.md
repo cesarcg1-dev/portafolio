@@ -26,7 +26,7 @@ Son decisiones ya visibles en el código, en los documentos originales o acordad
 | A-09 | Acuerdo de la versión anterior: la fase de prueba usaba Supabase local con puertos 554xx y aplicaba el esquema como migración antes del seed. Queda superado por A-10 el 22 de noviembre de 2026 |
 | A-10 | Esta copia no usa Supabase ni base de datos: las demos corren en `localhost` y los datos se guardan en el navegador con `localStorage` (acordado el 22 de noviembre de 2026) |
 | A-11 | En el pie se muestran el correo `cesarcg1@gmail.com` y el GitHub `https://github.com/cesarcg1-dev`; no se muestra LinkedIn por decisión de César el 22 de noviembre de 2026 |
-| A-12 | No se usa Formspree: César no tiene cuenta y la alternativa gratuita no le conviene. El envío del formulario se resolverá con otro mecanismo sin base de datos (acordado el 22 de noviembre de 2026) |
+| A-12 | No se usa Formspree: César no tiene cuenta. El formulario envía con Formsubmit.co, sin cuenta ni base de datos; requiere activar el endpoint con la primera prueba (acordado el 22 de noviembre de 2026) |
 
 ## Pendientes
 
