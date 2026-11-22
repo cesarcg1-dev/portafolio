@@ -16,13 +16,13 @@ Este archivo registra los cambios de la copia `chacdev-portafolioSBD`, que susti
 
 **Regla de cada commit:** al crear un commit se carga aquí su resumen ejecutivo: hash y mensaje del commit, seguidos de tres o cuatro líneas con lo hecho y el resultado verificado. El resumen va en «Resumen del avance» y el detalle cronológico, bajo la fecha correspondiente. El hash se toma de `git log -1 --oneline` justo después del commit; si el texto se escribió antes, se completa con el hash real en ese momento.
 
-Esta copia no tiene carpeta `.git`, así que los cambios del 22 de noviembre se registran sin hash. Cuando César cree el primer commit aquí, se agregará el hash real a ese registro.
+Esta copia ya tiene carpeta `.git`. El primer commit es `22bad1b`, creado el 22 de noviembre de 2026; su resumen ejecutivo se registró abajo con el hash real. La edición de este archivo para incluir ese hash queda pendiente para el siguiente commit, según la regla de resumen por commit.
 
 ## Resumen del avance
 
-Sin commit en esta copia — Documentar la versión sin base de datos (22 de noviembre de 2026).
+`22bad1b` — Actualizar portafolio a versión sin base de datos y preparar arranque local (22 de noviembre de 2026).
 
-- Se reescriben los diez documentos de `Docs/` para describir el código actual: demos en `localhost`, datos de ejemplo en `src/data/` y cambios en `localStorage`.
+- Se reescriben los once documentos de `Docs/` para describir el código actual: demos en `localhost`, datos de ejemplo en `src/data/` y cambios en `localStorage`.
 - Se registran los acuerdos A-10 y la resolución de PD-05, PD-09 y PD-11; A-09 queda como acuerdo superado de la versión anterior.
 - Se actualizan los estados de mejoras: M-019 y M-020 pasan a `Hecha`; M-007, M-009 y M-012 quedan `Descartada` en esta copia.
 - Prueba: build correcto con `npm run build`; las cuatro rutas abren en `localhost:5173` sin errores de consola ni peticiones fallidas. Queda pendiente la revisión registrada en 375, 768 y 1024 px (M-011).
