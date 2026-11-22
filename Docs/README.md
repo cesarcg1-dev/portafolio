@@ -26,10 +26,11 @@ Cada pregunta se responde en un solo archivo.
 | `ARQUITECTURA.md` | ¿Cómo está construido y qué límites tiene? |
 | `MODELO_DE_DATOS.md` | ¿Qué datos hay y cómo se guardan? |
 | `DECISIONES.md` | ¿Qué está acordado y qué falta por decidir? |
-| `ROADMAP.md` | ¿En qué etapas se trabaja? |
+| `ROADMAP.md` | ¿En qué etapas y tareas se trabaja? Incluye el plan original fusionado |
 | `MEJORAS.md` | ¿Qué mejoras se han registrado? |
 | `CHANGELOG.md` | ¿Qué cambios hubo en esta copia? |
-| `PLAN.md` | Plan original de construcción (documento de apoyo) |
+
+El plan original de construcción se incorporó a `ROADMAP.md` el 22 de noviembre de 2026 (C-005) para no repetir las mismas etapas en dos archivos; `PLAN.md` se eliminó.
 
 El `README.md` de la raíz es la guía rápida para arrancar la app. Este archivo es el índice de la documentación oficial; ambos conviven por acuerdo A-07.
 

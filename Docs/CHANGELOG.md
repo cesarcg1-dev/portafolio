@@ -46,6 +46,13 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - Se corrige PD-06: esta copia ya tiene `.git` y commits locales, pero sigue sin remote. Se anota para M-018 el campo `type="date"` de BarberShop a 768 px, más ancho por dentro que por fuera.
 - Prueba: mediciones de layout y consola en navegador con cargas nuevas. Sin cambios de código, por lo que no aplica Ctrl+F5.
 
+`C-005` — Fusionar PLAN.md en ROADMAP.md (22 de noviembre de 2026).
+
+- Se confirma que ambos documentos trataban las mismas etapas: `ROADMAP.md` las resumía y `PLAN.md` las detallaba con tareas, tiempos y estados, algunos ya desactualizados en esta copia.
+- `ROADMAP.md` incorpora las fases 0 a 7 del plan original, dependencias, riesgos y recursos, con los estados ajustados a la copia sin base de datos. `PLAN.md` se elimina.
+- Se actualiza `Docs/README.md`: `ROADMAP.md` queda como único archivo de etapas y tareas, y `Docs/` pasa de 11 a 10 documentos.
+- Prueba: revisor de enlaces internos de `Docs/` sin enlaces rotos. Sin cambios de código, por lo que no aplica Ctrl+F5.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -59,6 +66,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Segundo commit (`C-002`), hecho con la regla anterior, registró el hash real del primero en este archivo. Con la regla nueva no se habría necesitado.
 - Tercer commit (`C-003`): se cambia la regla de registro a un ID propio `C-xx`, asignado antes de commitear, para no hacer un segundo commit solo por el CHANGELOG. Se actualizan `Docs/README.md`, `Docs/CHANGELOG.md` y `Docs/ROADMAP.md`.
 - Cuarto commit (`C-004`): se cierra Etapa 0 con la revisión de 50 enlaces y se marca M-011 como hecha tras comprobar las cuatro rutas en 375, 768 y 1024 px. Se corrige PD-06 y se registra una observación para M-018.
+- Quinto commit (`C-005`): se fusiona `PLAN.md` en `ROADMAP.md` y se elimina `PLAN.md`. El roadmap conserva el detalle de fases, dependencias, riesgos y recursos con los estados de esta copia; `Docs/` queda con 10 archivos.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 
