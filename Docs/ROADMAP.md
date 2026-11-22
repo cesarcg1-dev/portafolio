@@ -131,7 +131,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 |---|---|---|---|---|
 | 6.1 | Revisar responsive en 375px, 768px, 1024px en las 3 demos + landing | Sin desbordamiento ni texto cortado | 1h | Hecho en local el 22 de noviembre de 2026 (M-011); falta en producción |
 | 6.2 | Verificar consola sin errores en producción | Consola limpia | 30 min | Pendiente; solo se ha comprobado en desarrollo |
-| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Parcial: favicon y meta básicos; falta og:image (M-003) |
+| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y og:image (M-003); falta la URL absoluta al publicar (PD-07) |
 | 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente (M-002) |
 | 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Pendiente (PD-02) |
 | 6.6 | Deploy final y prueba en móvil real | Sitio funcional | 30 min | Pendiente (M-010) |
@@ -151,7 +151,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 Situación al 22 de noviembre de 2026:
 
 - **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos. Al fusionarse `PLAN.md` aquí, `Docs/` quedó con 10 archivos (C-005).
-- **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002), `og:image` (M-003) y datos de contacto (M-004). M-006 ya está hecha.
+- **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002) y datos de contacto (M-004). M-003 y M-006 ya están hechas.
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el plan original.
 - **Trabajo ya realizado en esta copia:** landing con diseño propio, rutas `/crm`, `/taskflow` y `/barbershop`, nueve colecciones de datos de ejemplo y operaciones crear/editar/borrar con «Reiniciar demo» (M-019).

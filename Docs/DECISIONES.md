@@ -36,7 +36,7 @@ Son decisiones ya visibles en el código, en los documentos originales o acordad
 | PD-04 | Definir metas numéricas de éxito | — | Sin resolver |
 | PD-05 | Confirmar proyecto de Supabase real y ejecución de `schema.sql` y `seed.sql` | M-012 | Cerrado el 22 de noviembre de 2026: en esta copia no hay proyecto de Supabase ni scripts SQL (A-10) |
 | PD-06 | Crear el repositorio remoto en GitHub | M-010 | Sin resolver; esta copia ya tiene carpeta `.git` y commits locales, pero todavía no tiene remote |
-| PD-07 | Publicar en Vercel y fijar la URL final | M-010 | Sin resolver |
+| PD-07 | Publicar en Vercel y fijar la URL final | M-010 | Sin resolver; `og:image` usa la ruta relativa `/og-image.png` y habrá que convertirla en URL absoluta con el dominio final |
 | PD-08 | Reemplazar correo, GitHub y LinkedIn de ejemplo | M-004 | Sin resolver |
 | PD-09 | Definir el trabajo con Supabase local | M-009 | Cerrado: pertenece a la versión anterior; en esta copia no aplica (A-10) |
 | PD-10 | Definir el alcance del detalle de oportunidad en el CRM | M-006 | Sin resolver: M-006 abrió el cuadro existente al hacer clic en la tarjeta, con contacto, título y valor; falta decidir si el detalle mostrará más campos |

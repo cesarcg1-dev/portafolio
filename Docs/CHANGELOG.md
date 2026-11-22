@@ -59,6 +59,12 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - M-006 pasa a `Hecha` y se actualiza la fase 3.4 del roadmap. PD-10 sigue abierto: no se decidió ampliar los campos del detalle.
 - Prueba: `npm run build` correcto; en navegador se verificó la apertura con el valor correcto, el cierre, que la flecha derecha mueve la oportunidad sin abrir el cuadro, `Enter`, 375 y 768 px sin desbordamiento y consola sin errores. **Recarga con Ctrl+F5** al revisar en tu navegador.
 
+`C-007` — Añadir la imagen de vista previa og:image (22 de noviembre de 2026).
+
+- Se creó `public/og-image.png`, un PNG propio de 1200×630 con los colores de la landing, y se agregaron `og:image` y `og:image:alt` en `index.html`.
+- M-003 pasa a `Hecha`. La URL queda relativa (`/og-image.png`) hasta decidir el dominio; PD-07 registra que habrá que volverla absoluta al publicar.
+- Prueba: `npm run build` correcto; `dist/og-image.png` se genera y la petición en `localhost` devuelve 200 `image/png` de 1200×630, sin errores de consola. **Recarga con Ctrl+F5** al revisar en tu navegador.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -74,6 +80,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Cuarto commit (`C-004`): se cierra Etapa 0 con la revisión de 50 enlaces y se marca M-011 como hecha tras comprobar las cuatro rutas en 375, 768 y 1024 px. Se corrige PD-06 y se registra una observación para M-018.
 - Quinto commit (`C-005`): se fusiona `PLAN.md` en `ROADMAP.md` y se elimina `PLAN.md`. El roadmap conserva el detalle de fases, dependencias, riesgos y recursos con los estados de esta copia; `Docs/` queda con 10 archivos.
 - Sexto commit (`C-006`): se abre el detalle del CRM al hacer clic en la tarjeta o pulsar `Enter`. M-006 pasa a `Hecha`; PD-10 continúa abierto sobre si conviene mostrar más campos.
+- Séptimo commit (`C-007`): se agrega `og:image` con un PNG propio de 1200×630 y se marca M-003 como hecha. La URL absoluta queda pendiente del dominio final (PD-07).
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 
