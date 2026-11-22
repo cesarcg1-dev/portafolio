@@ -89,7 +89,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 | 3.1 | Crear ruta `/crm` | Página accesible | 15 min | Hecho |
 | 3.2 | Leer etapas, contactos y oportunidades desde `localStorage` | Datos cargando | 30 min | Hecho |
 | 3.3 | Vista de pipeline: columnas por etapa, tarjetas de oportunidad | Tablero visual | 2h | Hecho |
-| 3.4 | Cuadro de detalle y edición con `Dialog` | Interacción funcional | 1h | Hecho desde «Editar»; falta el clic en la tarjeta (M-006) |
+| 3.4 | Cuadro de detalle y edición con `Dialog` | Interacción funcional | 1h | Hecho: se abre desde «Editar» y al hacer clic en la tarjeta (M-006) |
 | 3.5 | Botón «Volver al portafolio» y «Reiniciar demo» | Navegación y reinicio | 10 min | Hecho |
 | 3.6 | Responsive: pipeline en móvil (stack) | Usable en móvil | 45 min | Hecho |
 
@@ -151,7 +151,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 Situación al 22 de noviembre de 2026:
 
 - **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos. Al fusionarse `PLAN.md` aquí, `Docs/` quedó con 10 archivos (C-005).
-- **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002), `og:image` (M-003), datos de contacto (M-004) y el clic en la tarjeta del CRM (M-006).
+- **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002), `og:image` (M-003) y datos de contacto (M-004). M-006 ya está hecha.
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el plan original.
 - **Trabajo ya realizado en esta copia:** landing con diseño propio, rutas `/crm`, `/taskflow` y `/barbershop`, nueve colecciones de datos de ejemplo y operaciones crear/editar/borrar con «Reiniciar demo» (M-019).

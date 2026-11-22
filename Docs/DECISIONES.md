@@ -39,7 +39,7 @@ Son decisiones ya visibles en el código, en los documentos originales o acordad
 | PD-07 | Publicar en Vercel y fijar la URL final | M-010 | Sin resolver |
 | PD-08 | Reemplazar correo, GitHub y LinkedIn de ejemplo | M-004 | Sin resolver |
 | PD-09 | Definir el trabajo con Supabase local | M-009 | Cerrado: pertenece a la versión anterior; en esta copia no aplica (A-10) |
-| PD-10 | Definir el alcance del detalle de oportunidad en el CRM | M-006 | Sin resolver; el cuadro `Dialog` ya existe y se abre desde «Editar» |
+| PD-10 | Definir el alcance del detalle de oportunidad en el CRM | M-006 | Sin resolver: M-006 abrió el cuadro existente al hacer clic en la tarjeta, con contacto, título y valor; falta decidir si el detalle mostrará más campos |
 | PD-11 | Prescindir de Supabase en las demos y usar solo `localStorage` | M-020 | Resuelto el 22 de noviembre de 2026 con A-10: esta copia es el proyecto sin base de datos y M-019 quedó hecha |
 
 La columna **Resolución** se llena cuando el pendiente se acuerde. Si la resolución crea un acuerdo, se agrega una fila `A-xx` y se escribe ese ID en la resolución. Al resolverse, la mejora correspondiente en `MEJORAS.md` pasa a `Hecha`.

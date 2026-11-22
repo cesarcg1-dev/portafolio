@@ -129,43 +129,58 @@ export default function CRM() {
                   const contact = contactById(deal.contact_id);
                   return (
                     <Card key={deal.id}>
-                      <CardHeader className="p-3 pb-1">
-                        <CardTitle className="text-sm">{deal.title}</CardTitle>
-                      </CardHeader>
-                      <CardContent className="p-3 pt-1">
-                        <p className="text-xs text-slate-500">
-                          {contact?.company || "Sin empresa"}
-                        </p>
-                        <p className="text-sm font-semibold mt-1">
-                          ${Number(deal.value).toLocaleString("es-MX")}
-                        </p>
-                        <div className="flex items-center gap-1 mt-2">
-                          <button
-                            onClick={() => move(deal, -1)}
-                            className="text-xs text-slate-400 hover:text-slate-800 px-1"
-                          >
-                            ←
-                          </button>
-                          <button
-                            onClick={() => move(deal, 1)}
-                            className="text-xs text-slate-400 hover:text-slate-800 px-1"
-                          >
-                            →
-                          </button>
-                          <button
-                            onClick={() => openEdit(deal)}
-                            className="ml-auto text-xs text-slate-400 hover:text-slate-800"
-                          >
-                            Editar
-                          </button>
-                          <button
-                            onClick={() => remove(deal.id)}
-                            className="text-xs text-slate-300 hover:text-red-600"
-                          >
-                            ×
-                          </button>
-                        </div>
-                      </CardContent>
+                      <div
+                        role="button"
+                        tabIndex={0}
+                        onClick={() => openEdit(deal)}
+                        onKeyDown={(event) => {
+                          if (event.key !== "Enter" && event.key !== " ") {
+                            return;
+                          }
+                          event.preventDefault();
+                          openEdit(deal);
+                        }}
+                        aria-label={`Ver detalle de ${deal.title}`}
+                        className="cursor-pointer rounded-lg hover:bg-slate-50"
+                      >
+                        <CardHeader className="p-3 pb-1">
+                          <CardTitle className="text-sm">{deal.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-3 pt-1">
+                          <p className="text-xs text-slate-500">
+                            {contact?.company || "Sin empresa"}
+                          </p>
+                          <p className="text-sm font-semibold mt-1">
+                            ${Number(deal.value).toLocaleString("es-MX")}
+                          </p>
+                        </CardContent>
+                      </div>
+                      <div className="flex items-center gap-1 px-3 pb-3">
+                        <button
+                          onClick={() => move(deal, -1)}
+                          className="text-xs text-slate-400 hover:text-slate-800 px-1"
+                        >
+                          ←
+                        </button>
+                        <button
+                          onClick={() => move(deal, 1)}
+                          className="text-xs text-slate-400 hover:text-slate-800 px-1"
+                        >
+                          →
+                        </button>
+                        <button
+                          onClick={() => openEdit(deal)}
+                          className="ml-auto text-xs text-slate-400 hover:text-slate-800"
+                        >
+                          Editar
+                        </button>
+                        <button
+                          onClick={() => remove(deal.id)}
+                          className="text-xs text-slate-300 hover:text-red-600"
+                        >
+                          ×
+                        </button>
+                      </div>
                     </Card>
                   );
                 })}

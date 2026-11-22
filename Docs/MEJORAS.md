@@ -1,6 +1,6 @@
 # MEJORAS · ChacDev Portafolio
 
-**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** M-001, M-005, M-008, M-011, M-017, M-019 y M-020 hechas; M-007, M-009 y M-012 descartadas en esta copia; el resto sigue pendiente
+**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** M-001, M-005, M-006, M-008, M-011, M-017, M-019 y M-020 hechas; M-007, M-009 y M-012 descartadas en esta copia; el resto sigue pendiente
 
 Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman parte del PRD. El listado de mejoras es la tabla de abajo.
 
@@ -28,7 +28,7 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 | M-003 | Añadir `favicon.svg` y la etiqueta `og:image` | Pendiente |
 | M-004 | Reemplazar correo, GitHub y LinkedIn de ejemplo | Pendiente |
 | M-005 | Mostrar los enlaces de demos en el menú móvil | Hecha |
-| M-006 | Agregar `Dialog` y el detalle de oportunidad en el CRM | Pendiente |
+| M-006 | Agregar `Dialog` y el detalle de oportunidad en el CRM | Hecha |
 | M-007 | Mostrar error cuando falle Supabase y validar variables de entorno | Descartada |
 | M-008 | Corregir el conteo de subtareas heredado del README anterior | Hecha |
 | M-009 | Configurar Supabase local con `supabase/config.toml` | Descartada |
@@ -51,7 +51,7 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 - **M-003:** `index.html` referencia `/favicon.svg`. En la versión anterior no existía la carpeta `public/`; en esta copia se agregó el icono, pero sigue sin haber `og:image`. Verificación: recargar con Ctrl+F5 y comprobar que no haya 404 en la consola.
 - **M-004:** origen PD-08. `Footer.jsx` y `Home.jsx` conservan `tu-usuario` en los enlaces sociales. Verificación: abrir el pie de página y la sección de contacto con datos reales.
 - **M-005:** la landing incluye un encabezado propio con botón ☰ y menú móvil que lleva a las secciones y a las tres demos. El `Navbar` que aparece dentro de las demos sigue ocultando sus enlaces por debajo de `md`. Verificación: abrir `/` en 375 px y comprobar que se pueda llegar a las tres demos desde el menú.
-- **M-006:** origen PD-10. `src/components/ui/dialog.jsx` existe y el CRM lo abre desde «Editar» para ver y cambiar contacto, título y valor. Sigue sin abrirse al hacer clic en la tarjeta. Verificación: hacer clic en una oportunidad y ver su detalle sin salir del pipeline.
+- **M-006:** origen PD-10. El CRM abre el `Dialog` desde «Editar» y, desde el 22 de noviembre de 2026, también al hacer clic en la información de la tarjeta o al pulsar `Enter` con el foco en ella. El cuadro permite ver y cambiar contacto, título y valor sin salir del pipeline; las flechas y «×» quedaron fuera del botón para no abrirlo. Verificado en navegador con clic, cierre, teclado y 375/768 px. **Hecha** el 22 de noviembre de 2026. PD-10 sigue abierto sobre si el detalle debe mostrar más campos.
 - **M-007:** descartada el 22 de noviembre de 2026. No hay Supabase, variables de entorno ni consultas a servidor en esta copia; las demos siempre parten de los arreglos de `src/data/`, así que no hay una conexión que pueda fallar.
 - **M-008:** la documentación anterior decía 15 subtareas, pero los datos de ejemplo tienen 8. Los documentos actuales registran 8. Verificación: contar los objetos de `seedSubtasks` en `src/data/seedTaskflow.js`.
 - **M-009:** descartada en esta copia el 22 de noviembre de 2026. Pertenecía a la versión anterior con Supabase local (puertos 554xx, migración, seed y RLS), registrada en el `CHANGELOG.md`. En esta copia no hay carpeta `supabase/` ni configuración de ese tipo; ver A-09 y A-10.
