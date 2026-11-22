@@ -14,20 +14,32 @@
 
 Este archivo registra los cambios de la copia `chacdev-portafolioSBD`, que sustituye como documento oficial a la copia `chacdev-portafolio` de `05-Portafolio ChacDev`. Las mejoras se siguen en `MEJORAS.md` y los acuerdos en `DECISIONES.md`.
 
-**Regla de cada commit:** al crear un commit se carga aquí su resumen ejecutivo: hash y mensaje del commit, seguidos de tres o cuatro líneas con lo hecho y el resultado verificado. El resumen va en «Resumen del avance» y el detalle cronológico, bajo la fecha correspondiente. El hash se toma de `git log -1 --oneline` justo después del commit; si el texto se escribió antes, se completa con el hash real en ese momento.
+**Regla de cada commit:** antes de commitear se toma el siguiente ID libre `C-001`, `C-002`, … y se escribe aquí su resumen ejecutivo: ID, mensaje del commit y fecha, seguidos de tres o cuatro líneas con lo hecho y el resultado verificado. Ese mismo ID va al principio del mensaje del commit, para localizarlo con `git log --grep=C-00x`. El resumen va en «Resumen del avance» y el detalle cronológico, bajo la fecha correspondiente. Como el ID se elige antes de commitear, el registro entra en el mismo commit que el cambio: no se hace un segundo commit solo para actualizar este archivo. El hash de Git no se copia aquí; se consulta con `git log --oneline`.
 
-Esta copia ya tiene carpeta `.git`. El primer commit es `22bad1b`, creado el 22 de noviembre de 2026; su resumen ejecutivo se registró abajo con el hash real. La edición de este archivo para incluir ese hash queda pendiente para el siguiente commit, según la regla de resumen por commit.
+Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron con la regla anterior, que esperaba al commit para copiar el hash. Su equivalencia con el hash de Git, solo para esos dos, es: `C-001` = `22bad1b` y `C-002` = `3f4c945`. La regla de ID propio se aplica desde `C-003`.
 
 ## Resumen del avance
 
-`22bad1b` — Actualizar portafolio a versión sin base de datos y preparar arranque local (22 de noviembre de 2026).
+`C-001` — Actualizar portafolio a versión sin base de datos y preparar arranque local (22 de noviembre de 2026).
 
 - Se reescriben los once documentos de `Docs/` para describir el código actual: demos en `localhost`, datos de ejemplo en `src/data/` y cambios en `localStorage`.
 - Se registran los acuerdos A-10 y la resolución de PD-05, PD-09 y PD-11; A-09 queda como acuerdo superado de la versión anterior.
 - Se actualizan los estados de mejoras: M-019 y M-020 pasan a `Hecha`; M-007, M-009 y M-012 quedan `Descartada` en esta copia.
 - Prueba: build correcto con `npm run build`; las cuatro rutas abren en `localhost:5173` sin errores de consola ni peticiones fallidas. Queda pendiente la revisión registrada en 375, 768 y 1024 px (M-011).
 
-`122162d` y `e0c97b8` — Commits de la versión anterior con Supabase; sus resúmenes se conservan más abajo como registro histórico.
+`C-002` — Registrar hash del primer commit en el CHANGELOG (22 de noviembre de 2026).
+
+- Segundo commit de esta copia, hecho con la regla anterior: solo actualizó este archivo para reemplazar el texto «Sin commit en esta copia» por el hash y el mensaje reales.
+- Con la regla nueva no habría sido necesario: ese registro iba en el mismo commit del cambio.
+- Prueba: `git status --short` quedó vacío y `git log -2 --oneline` mostró los dos commits.
+
+`C-003` — Cambiar el registro del CHANGELOG a un ID propio (22 de noviembre de 2026).
+
+- Se sustituye el hash por el ID `C-xx`, asignado antes de commitear, para que el cambio y su registro queden en un solo commit.
+- Se actualizan las reglas en `Docs/README.md`, `Docs/CHANGELOG.md` y `Docs/ROADMAP.md`; se numeran `C-001` y `C-002` los dos commits ya existentes.
+- Prueba: este registro se guarda junto con el cambio, en el mismo commit; `git log -1 --oneline` debe mostrar el mensaje encabezado por `C-003`.
+
+Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
 
@@ -37,11 +49,13 @@ Esta copia ya tiene carpeta `.git`. El primer commit es `22bad1b`, creado el 22 
 - Se marcan como hechas M-019 (crear, editar, borrar y reiniciar en las tres demos) y M-020 (decisión de no usar base de datos); se descartan M-007, M-009 y M-012 por no aplicar aquí.
 - Se copia `src/landing-mtto.css` desde la versión anterior, se crea `public/favicon.svg` y el `README.md` de la raíz, y se quita un bloque duplicado en `src/components/ui/input.jsx` que impedía compilar.
 - Prueba: build correcto con `npm run build`; las cuatro rutas abren en `localhost:5173` sin errores de consola ni peticiones fallidas. Queda pendiente la revisión registrada en 375, 768 y 1024 px (M-011).
+- Segundo commit (`C-002`), hecho con la regla anterior, registró el hash real del primero en este archivo. Con la regla nueva no se habría necesitado.
+- Tercer commit (`C-003`): se cambia la regla de registro a un ID propio `C-xx`, asignado antes de commitear, para no hacer un segundo commit solo por el CHANGELOG. Se actualizan `Docs/README.md`, `Docs/CHANGELOG.md` y `Docs/ROADMAP.md`.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 
 - Se guarda el rediseño de la landing con el diseño del ZIP adaptado a ChacDev (`src/landing-mtto.css`, `src/pages/Home.jsx` y `src/App.jsx`). Primero se descartó la versión con imágenes generadas con IA y paleta vibrante, cuyo proveedor devolvió `Invalid credential`. M-017 pasa a `Hecha`.
-- Se documenta la regla de registrar en `CHANGELOG.md` el hash y el resumen ejecutivo de cada commit; se agregan M-017 a M-020 y se cierra PD-11 con M-020 descartada en esa versión.
+- Se documenta la regla de registrar en `CHANGELOG.md` el identificador y el resumen ejecutivo de cada commit (en esa versión, el identificador era el hash de Git); se agregan M-017 a M-020 y se cierra PD-11 con M-020 descartada en esa versión.
 - Se completa y verifica M-009: las cuatro rutas se abrieron con Ctrl+F5 sin errores de consola, las tres demos mostraron datos de Supabase local y la expansión de una tarea cargó sus subtareas. Se cerró PD-09 con el acuerdo A-09.
 - Se levantó Supabase local con puertos 554xx y se agregó la migración `20261121000000_init_schema.sql` para que `supabase start` aplicara el esquema antes del seed. Las nueve tablas respondieron por API con `anon` y un `INSERT` fue rechazado por RLS. Se actualizaron `MEJORAS.md`, `ROADMAP.md`, `DECISIONES.md`, `ARQUITECTURA.md` y `MODELO_DE_DATOS.md` de esa versión.
 - Se actualizaron los estados de `Docs/PLAN.md` y `Docs/MEJORAS.md` para reflejar el código de esa versión: 46 tareas con estados coincidentes.

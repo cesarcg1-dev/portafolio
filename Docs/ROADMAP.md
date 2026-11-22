@@ -34,4 +34,4 @@ Situación al 22 de noviembre de 2026:
 
 ## Regla de avance
 
-No se avanza a una etapa superior si queda un pendiente que la bloquee. Las mejoras se registran en `MEJORAS.md` antes de ejecutarse. Después de cada cambio de código se comprueba el resultado con `npm run build` y, en lo visual, con recarga forzada (Ctrl+F5). Cada commit se registra en `CHANGELOG.md` con su resumen ejecutivo, según la regla definida en ese archivo.
+No se avanza a una etapa superior si queda un pendiente que la bloquee. Las mejoras se registran en `MEJORAS.md` antes de ejecutarse. Después de cada cambio de código se comprueba el resultado con `npm run build` y, en lo visual, con recarga forzada (Ctrl+F5). Cada commit se registra en `CHANGELOG.md` con su ID `C-xx`, su mensaje y su resumen ejecutivo, en el mismo commit del cambio; la regla detallada está en ese archivo.

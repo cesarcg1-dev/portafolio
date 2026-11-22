@@ -48,4 +48,4 @@ El `README.md` de la raíz es la guía rápida para arrancar la app. Este archiv
 5. Antes de cambiar un acuerdo, se actualiza `DECISIONES.md`.
 6. Todo documento empieza con un índice. Al agregar, renombrar o quitar una sección, se actualiza el índice.
 7. Los acuerdos se numeran `A-xx`, los pendientes `PD-xx` y las mejoras `M-xx` (ver `MEJORAS.md`).
-8. Cada commit se registra en `CHANGELOG.md` con su hash y un resumen ejecutivo de lo hecho; la regla detallada está en ese archivo.
+8. Cada commit se registra en `CHANGELOG.md` con un ID propio `C-xx`, su mensaje y un resumen ejecutivo de lo hecho. El ID se asigna antes de commitear y va al principio del mensaje del commit, para que el registro entre en el mismo commit que el cambio; la regla detallada está en `CHANGELOG.md`.
