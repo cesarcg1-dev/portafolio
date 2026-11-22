@@ -90,6 +90,13 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - M-010 queda `En curso`: faltan el remote, el deploy y la prueba en producción. Se corrigen los documentos que todavía citaban Formspree, un remote inexistente o el formulario sin activar.
 - Prueba: `npm run build` correcto, `vercel.json` válido, 55 enlaces de `Docs/` sin rotos y las cuatro rutas abren en localhost con la `og:image` absoluta y consola limpia. Sin cambios visuales, no aplica Ctrl+F5.
 
+`C-012` — Cerrar M-010 con la URL publicada (22 de noviembre de 2026).
+
+- César conectó `origin` a `https://github.com/cesarcg1-dev/portafolio.git`, subió `master` y publicó en Vercel. La URL final es `https://portafolio-mu-fawn-43.vercel.app/`, no `chacdev.vercel.app` (PD-02, PD-06, PD-07).
+- Verificado en producción: `/`, `/crm`, `/taskflow` y `/barbershop` abren con su contenido y consola sin errores; `/og-image.png` devuelve 200 `image/png` y el formulario conserva su `action` de Formsubmit.co. Gracias a `vercel.json`, las rutas de las demos responden al entrar directamente.
+- Se corrige `og:image` a la URL real y se cierran M-010, PD-02, PD-06 y PD-07. Siguen pendientes la prueba del formulario en producción (fase 6.4) y la prueba en móvil real.
+- Prueba: navegación en la URL pública sin errores de consola y petición de imagen con estado 200; sin cambios visuales en la interfaz, no aplica Ctrl+F5.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -110,6 +117,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Noveno commit (`C-009`): se configura Formsubmit.co como endpoint del formulario y M-002 pasa a `En curso`, a la espera de la activación por correo.
 - Décimo commit (`C-010`): se cierra M-002 tras la confirmación de recepción del mensaje de prueba. Etapa 1 queda cerrada y se corrigen los documentos que aún citaban Formspree.
 - Undécimo commit (`C-011`): se decidieron el repo `cesarcg1-dev/portafolio` y el dominio `chacdev.vercel.app`, se agregó `vercel.json` para las rutas de las demos y se fijó `og:image` como URL absoluta. M-010 sigue `En curso` hasta el push y el deploy.
+- Duodécimo commit (`C-012`): se cierra M-010 con la URL real de Vercel, se corrige `og:image` y se registran las cuatro rutas verificadas en producción; queda pendiente el envío de prueba del formulario.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 

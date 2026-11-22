@@ -46,8 +46,8 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 |---|---|---|---|---|
 | 0.1 | Confirmar stack: React + Vite vs Basecoat (vanilla) | Decisión documentada | 15 min | Hecho |
 | 0.2 | Crear proyecto Supabase Free, anotar URL y anon key | Proyecto creado | 10 min | No aplica (A-10) |
-| 0.3 | Crear repositorio GitHub (`cesarcg1-dev/portafolio`) | Repo listo | 5 min | Pendiente: César debe crearlo y conectarlo (PD-06, M-010) |
-| 0.4 | Crear proyecto Vercel vinculado al repo | Deploy automático configurado | 10 min | Pendiente: importar con el nombre `chacdev` para `https://chacdev.vercel.app` (PD-02, PD-07, M-010) |
+| 0.3 | Crear repositorio GitHub (`cesarcg1-dev/portafolio`) | Repo listo | 5 min | Hecho: `origin` conectado y rama `master` subida por César (PD-06, M-010) |
+| 0.4 | Crear proyecto Vercel vinculado al repo | Deploy automático configurado | 10 min | Hecho: Vercel despliega desde `master`; URL final `https://portafolio-mu-fawn-43.vercel.app/` (PD-02, PD-07, M-010) |
 | 0.5 | Elegir servicio de formulario: Formsubmit.co, sin cuenta | Endpoint configurado | 10 min | Hecho el 22 de noviembre de 2026: endpoint activado y mensaje de prueba recibido (A-12) |
 
 **Criterio de salida:** repo creado, Vercel vinculado y servicio de formulario elegido. No se crea proyecto de base de datos.
@@ -129,14 +129,14 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 
 | # | Tarea | Entregable | Tiempo estimado | Estado |
 |---|---|---|---|---|
-| 6.1 | Revisar responsive en 375px, 768px, 1024px en las 3 demos + landing | Sin desbordamiento ni texto cortado | 1h | Hecho en local el 22 de noviembre de 2026 (M-011); falta en producción |
-| 6.2 | Verificar consola sin errores en producción | Consola limpia | 30 min | Pendiente; solo se ha comprobado en desarrollo |
-| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y `og:image` con URL absoluta (M-003); falta comprobarla en producción (PD-07) |
-| 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente; comprobado en localhost el 22 de noviembre de 2026, falta al publicar |
-| 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Dominio elegido: `https://chacdev.vercel.app` (PD-02); falta configurarlo en Vercel |
-| 6.6 | Deploy final y prueba en móvil real | Sitio funcional | 30 min | Pendiente (M-010) |
+| 6.1 | Revisar responsive en 375px, 768px, 1024px en las 3 demos + landing | Sin desbordamiento ni texto cortado | 1h | Hecho en local el 22 de noviembre de 2026 (M-011); en producción abren las cuatro rutas, pero no se repitieron las medidas de ancho |
+| 6.2 | Verificar consola sin errores en producción | Consola limpia | 30 min | Hecho: consola sin errores en `/`, `/crm`, `/taskflow` y `/barbershop` el 22 de noviembre de 2026 |
+| 6.3 | Añadir favicon y meta tags (título, descripción, og:image) | SEO básico | 30 min | Hecho: favicon, meta básicos y `og:image` con la URL real; `/og-image.png` responde 200 en producción (M-003, PD-07) |
+| 6.4 | Probar formulario de contacto en producción | Confirmación recibida | 15 min | Pendiente: comprobado en localhost, falta enviar un mensaje desde la URL pública |
+| 6.5 | Configurar dominio (si aplica) o usar `.vercel.app` | URL final | 15 min | Hecho: `https://portafolio-mu-fawn-43.vercel.app/` asignada por Vercel (PD-02) |
+| 6.6 | Deploy final y prueba en móvil real | Sitio funcional | 30 min | Hecho el deploy desde `master` y verificadas las cuatro rutas; falta la prueba en móvil real (M-010) |
 
-**Preparación hecha el 22 de noviembre de 2026:** `vercel.json` redirige todas las rutas a `index.html` para que `/crm`, `/taskflow` y `/barbershop` abran al entrar directamente; `og:image` usa ya la URL absoluta del dominio elegido (PD-02).
+**Publicación verificada el 22 de noviembre de 2026:** `vercel.json` redirige todas las rutas a `index.html` y se comprobó que `/crm`, `/taskflow` y `/barbershop` abren al entrar directamente. La URL final es `https://portafolio-mu-fawn-43.vercel.app/` y `og:image` apunta a ella.
 
 **Criterio de salida:** sitio en producción, sin errores y con formulario funcional.
 

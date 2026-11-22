@@ -88,7 +88,7 @@ No hay variables de entorno en esta copia. No se necesita `.env.local` ni ningun
 
 - El sitio depende de Formsubmit.co para el formulario; las demos no dependen de servicios externos.
 - Los datos no se comparten entre navegadores ni dispositivos, y se pierden al limpiar el almacenamiento del sitio.
-- Hay commits locales, pero todavía no hay remote de GitHub ni deploy confirmado (PD-06, PD-07). `vercel.json` ya prepara el enrutamiento de las rutas de las demos.
+- El remote `https://github.com/cesarcg1-dev/portafolio.git` está conectado y el sitio publicado en `https://portafolio-mu-fawn-43.vercel.app/` (PD-06, PD-07). `vercel.json` enruta las rutas de las demos y se comprobó que responden al abrirlas directamente.
 - No hay página 404 ni manejo de rutas desconocidas.
 - El `Navbar` de las demos no muestra sus enlaces en móvil (M-005); la landing sí tiene menú móvil propio.
 

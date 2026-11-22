@@ -37,14 +37,16 @@ El formulario de contacto de la landing envía los mensajes con Formsubmit.co a 
 
 ## Publicación
 
-El remote acordado es `https://github.com/cesarcg1-dev/portafolio` (PD-06). Para subir el código, crea ese repositorio en GitHub y ejecuta desde esta carpeta:
+El sitio publicado está en `https://portafolio-mu-fawn-43.vercel.app/`. El remote es `https://github.com/cesarcg1-dev/portafolio` (PD-06) y Vercel despliega automáticamente desde la rama `master`.
+
+Si necesitas volver a subir cambios desde otra copia, ejecuta desde esta carpeta:
 
 ```bash
 git remote add origin https://github.com/cesarcg1-dev/portafolio.git
 git push -u origin master
 ```
 
-Después importa el repositorio en Vercel con el nombre de proyecto `chacdev` para usar `https://chacdev.vercel.app` (PD-02). El archivo `vercel.json` redirige `/crm`, `/taskflow` y `/barbershop` a `index.html`, así que esas rutas funcionan al abrirlas directamente. Queda pendiente comprobar en producción el formulario y la imagen de vista previa (PD-07).
+El archivo `vercel.json` redirige `/crm`, `/taskflow` y `/barbershop` a `index.html`, así que esas rutas funcionan al abrirlas directamente. PD-02 quedó resuelto con la URL que asignó Vercel; `chacdev.vercel.app` no se usó. Falta probar el formulario en producción (fase 6.4).
 
 ## Documentación
 
