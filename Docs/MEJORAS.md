@@ -1,6 +1,6 @@
 # MEJORAS · ChacDev Portafolio
 
-**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** M-001, M-003, M-005, M-006, M-008, M-011, M-017, M-019 y M-020 hechas; M-007, M-009 y M-012 descartadas en esta copia; el resto sigue pendiente
+**Versión:** 1.1 · **Fecha:** 22 de noviembre de 2026 · **Estado:** M-001, M-003, M-004, M-005, M-006, M-008, M-011, M-017, M-019 y M-020 hechas; M-007, M-009 y M-012 descartadas en esta copia; el resto sigue pendiente
 
 Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman parte del PRD. El listado de mejoras es la tabla de abajo.
 
@@ -24,9 +24,9 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 | ID | Concepto | Estado |
 |---|---|---|
 | M-001 | Documentación inicial de ChacDev Portafolio | Hecha |
-| M-002 | Poner el ID real de Formspree y probar el envío | Pendiente |
+| M-002 | Definir el mecanismo de envío del formulario y probarlo | Pendiente |
 | M-003 | Añadir `favicon.svg` y la etiqueta `og:image` | Hecha |
-| M-004 | Reemplazar correo, GitHub y LinkedIn de ejemplo | Pendiente |
+| M-004 | Reemplazar correo, GitHub y LinkedIn de ejemplo | Hecha |
 | M-005 | Mostrar los enlaces de demos en el menú móvil | Hecha |
 | M-006 | Agregar `Dialog` y el detalle de oportunidad en el CRM | Hecha |
 | M-007 | Mostrar error cuando falle Supabase y validar variables de entorno | Descartada |
@@ -47,9 +47,9 @@ Aquí se archivan las mejoras que salen durante el trabajo y que **no** forman p
 ## Notas
 
 - **M-001:** tipo documentación. Motivo: la documentación estaba repartida entre la raíz del repo, la carpeta padre y el workspace. Resultado esperado: un conjunto de documentos en `Docs/` que explique el porqué, las reglas, la arquitectura, los datos, las decisiones y las etapas, más una guía rápida en la raíz. Acuerdos aplicados: A-07 y A-08. Archivos creados: los diez documentos de `Docs/` y el `README.md` de la raíz. Archivos reubicados: `PRD.md` y `ROADMAP.md` entraron a `Docs/`; `DESICIONES.md` pasó a `Docs/DECISIONES.md` con el nombre corregido. El 22 de noviembre de 2026 se actualizaron los documentos de `Docs/` a la copia sin base de datos.
-- **M-002:** origen PD-03. El `action` del formulario contiene `TU-FORM-ID`; el envío no está probado. Verificación: enviar un mensaje real y confirmar recepción.
+- **M-002:** origen PD-03. Formspree quedó descartado el 22 de noviembre de 2026 (A-12); el `action` sigue con `TU-FORM-ID` y el envío no está probado. Falta elegir el mecanismo de envío. Verificación: enviar un mensaje real y confirmar recepción en `cesarcg1@gmail.com`.
 - **M-003:** `index.html` referencia `/favicon.svg` y, desde el 22 de noviembre de 2026, `og:image` con `/og-image.png` y su texto alternativo. El PNG propio es de 1200×630 y usa los colores de la landing. Verificado: build correcto y petición 200 `image/png` sin errores de consola. **Hecha** el 22 de noviembre de 2026. Al publicar, PD-07 exige convertir la ruta en URL absoluta con el dominio final.
-- **M-004:** origen PD-08. `Footer.jsx` y `Home.jsx` conservan `tu-usuario` en los enlaces sociales. Verificación: abrir el pie de página y la sección de contacto con datos reales.
+- **M-004:** origen PD-08. El 22 de noviembre de 2026 se reemplazó `tu-usuario` por `https://github.com/cesarcg1-dev`, se agregó `mailto:cesarcg1@gmail.com` y se quitó el enlace de LinkedIn en `Footer.jsx` (A-11). No había marcadores de lugar en `Home.jsx`. Verificado en navegador. **Hecha** el 22 de noviembre de 2026.
 - **M-005:** la landing incluye un encabezado propio con botón ☰ y menú móvil que lleva a las secciones y a las tres demos. El `Navbar` que aparece dentro de las demos sigue ocultando sus enlaces por debajo de `md`. Verificación: abrir `/` en 375 px y comprobar que se pueda llegar a las tres demos desde el menú.
 - **M-006:** origen PD-10. El CRM abre el `Dialog` desde «Editar» y, desde el 22 de noviembre de 2026, también al hacer clic en la información de la tarjeta o al pulsar `Enter` con el foco en ella. El cuadro permite ver y cambiar contacto, título y valor sin salir del pipeline; las flechas y «×» quedaron fuera del botón para no abrirlo. Verificado en navegador con clic, cierre, teclado y 375/768 px. **Hecha** el 22 de noviembre de 2026. PD-10 sigue abierto sobre si el detalle debe mostrar más campos.
 - **M-007:** descartada el 22 de noviembre de 2026. No hay Supabase, variables de entorno ni consultas a servidor en esta copia; las demos siempre parten de los arreglos de `src/data/`, así que no hay una conexión que pueda fallar.

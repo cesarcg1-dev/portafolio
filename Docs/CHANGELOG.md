@@ -65,6 +65,12 @@ Los commits de esta copia se numeran desde `C-001`. Los dos primeros se hicieron
 - M-003 pasa a `Hecha`. La URL queda relativa (`/og-image.png`) hasta decidir el dominio; PD-07 registra que habrá que volverla absoluta al publicar.
 - Prueba: `npm run build` correcto; `dist/og-image.png` se genera y la petición en `localhost` devuelve 200 `image/png` de 1200×630, sin errores de consola. **Recarga con Ctrl+F5** al revisar en tu navegador.
 
+`C-008` — Poner los datos reales de contacto (22 de noviembre de 2026).
+
+- `Footer.jsx` muestra ahora `https://github.com/cesarcg1-dev` y `mailto:cesarcg1@gmail.com`; se quitó el enlace de LinkedIn, que no existe por ahora (A-11).
+- M-004 pasa a `Hecha` y PD-08 queda resuelto. También se cierra PD-03: Formspree queda descartado (A-12) y M-002 sigue abierto hasta elegir otro mecanismo de envío.
+- Prueba: `npm run build` correcto; en navegador los enlaces del pie apuntan a los valores esperados, sin errores de consola. **Recarga con Ctrl+F5** al revisar en tu navegador.
+
 Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase, en otro repositorio; sus resúmenes se conservan más abajo como registro histórico.
 
 ## 22 de noviembre de 2026
@@ -81,6 +87,7 @@ Los commits `122162d` y `e0c97b8` pertenecen a la versión anterior con Supabase
 - Quinto commit (`C-005`): se fusiona `PLAN.md` en `ROADMAP.md` y se elimina `PLAN.md`. El roadmap conserva el detalle de fases, dependencias, riesgos y recursos con los estados de esta copia; `Docs/` queda con 10 archivos.
 - Sexto commit (`C-006`): se abre el detalle del CRM al hacer clic en la tarjeta o pulsar `Enter`. M-006 pasa a `Hecha`; PD-10 continúa abierto sobre si conviene mostrar más campos.
 - Séptimo commit (`C-007`): se agrega `og:image` con un PNG propio de 1200×630 y se marca M-003 como hecha. La URL absoluta queda pendiente del dominio final (PD-07).
+- Octavo commit (`C-008`): se ponen el GitHub y el correo reales en el pie, se quita LinkedIn y se descarta Formspree. M-004 pasa a `Hecha`; PD-08 y PD-03 quedan cerrados con A-11 y A-12.
 
 ## 21 de noviembre de 2026 (versión anterior con Supabase)
 

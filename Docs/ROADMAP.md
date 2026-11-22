@@ -151,7 +151,7 @@ M-009 y M-012, que antes correspondían a Supabase, quedaron descartadas en esta
 Situación al 22 de noviembre de 2026:
 
 - **Etapa 0:** cerrada el 22 de noviembre de 2026. Documentación reescrita para describir la copia sin base de datos; 50 enlaces entre los 11 documentos revisados, sin enlaces rotos. Al fusionarse `PLAN.md` aquí, `Docs/` quedó con 10 archivos (C-005).
-- **Etapa 1:** pendiente. Siguen el ID real de Formspree (M-002) y datos de contacto (M-004). M-003 y M-006 ya están hechas.
+- **Etapa 1:** pendiente. Sigue definir y probar el envío del formulario (M-002), sin Formspree. M-003, M-004 y M-006 ya están hechas.
 - **Etapa 2:** verificada el 22 de noviembre de 2026. Esta copia no tiene base de datos que verificar: las demos leen `src/data/` y guardan en `localStorage`. `npm install` y `npm run build` funcionan; las cuatro rutas abren sin errores de consola ni peticiones fallidas.
 - **Etapas 3 y 4:** pendientes, según el plan original.
 - **Trabajo ya realizado en esta copia:** landing con diseño propio, rutas `/crm`, `/taskflow` y `/barbershop`, nueve colecciones de datos de ejemplo y operaciones crear/editar/borrar con «Reiniciar demo» (M-019).

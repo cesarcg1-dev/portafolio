@@ -7,20 +7,15 @@ export function Footer() {
         </p>
         <div className="flex gap-4">
           <a
-            href="https://github.com/tu-usuario"
+            href="https://github.com/cesarcg1-dev"
             target="_blank"
             rel="noreferrer"
             className="hover:text-slate-900"
           >
             GitHub
           </a>
-          <a
-            href="https://linkedin.com/in/tu-usuario"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-slate-900"
-          >
-            LinkedIn
+          <a href="mailto:cesarcg1@gmail.com" className="hover:text-slate-900">
+            cesarcg1@gmail.com
           </a>
         </div>
       </div>
